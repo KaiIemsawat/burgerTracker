@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+}
+
+.container {
+	margin: 50px auto;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.top-section {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.adding-section {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+table {
+	border: 2px solid #222222;
+	width: 100%;
+}
+
+th {
+	background-color: #888888;
+}
+
+td, th {
+	padding: 3px 15px;
+	text-align: center;
+	border-right: 2px solid #222222;
+}
+
+tr:nth-child(odd) {
+	background-color: #dddddd;
+}
+
+
+.burger-name, .restaurant-name, .input-rating, .input-notes {
+	margin: 15px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+input {
+		border: 2px solid #222222;
+}
+
+.submit {
+	color: #dddddd;
+	background-color: #0A5393;
+	float: right;
+	box-shadow: 2px 2px #222222;
+}
