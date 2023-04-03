@@ -24,6 +24,7 @@
 		
 		<div class="adding-section">
 			<form:form class="form" action="" method="put" modelAttribute="burger">
+				<input type="hidden" name="_method" value="put">
 				<div class="burger-name">
 					<div class="frontSection">
 						<form:label path="burgerName">Burger Name</form:label>

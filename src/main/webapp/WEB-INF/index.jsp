@@ -73,7 +73,7 @@
 						<form:label path="notes">Notes</form:label>
 						<form:errors path="notes" class="text-danger"></form:errors>
 					</div>
-					<form:input type="textarea" path="notes" rows="5" cols="50"></form:input>
+					<form:textarea class="tarea" type="textarea" path="notes" rows="5" cols="50"></form:textarea>
 				</div>
 				<input class="submit" type="submit" value="Submit"/>
 			</form:form>

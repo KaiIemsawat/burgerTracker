@@ -39,7 +39,7 @@ public class BurgerController {
 			@Valid
 			@ModelAttribute("burger") Burger burger
 			, BindingResult result
-			,Model model
+			, Model model
 			) {
 		if(result.hasErrors()) {
 			model.addAttribute("burgers", bService.allBurger());

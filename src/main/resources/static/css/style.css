@@ -47,7 +47,7 @@ tr:nth-child(odd) {
 	justify-content: space-between;
 }
 
-input {
+input, .tarea {
 		border: 2px solid #222222;
 }
 
