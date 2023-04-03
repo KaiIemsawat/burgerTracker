@@ -20,8 +20,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Edit Burger</h1>
-		
+		<h1>Edit Burger</h1>	
 		<div class="adding-section">
 			<form:form class="form" action="" method="put" modelAttribute="burger">
 				<input type="hidden" name="_method" value="put">
@@ -56,7 +55,6 @@
 				<input class="submit" type="submit" value="Submit"/>
 			</form:form>
 		</div>
-		
 	</div>
 </body>
 </html>
