@@ -14,39 +14,16 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Burger Tracker</title>
+	<title>Edit that Burgerrrr!!!</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
 	<div class="container">
-	
-		<div class="top-section">
-			<h1>Burger Tracker</h1>
-			<table>
-				<thead>
-					<tr>
-						<th>Burger Name</th>
-						<th>Restaurant Name</th>
-						<th>Rating (Out of 5)</th>
-						<th>Action</th>
-					</tr>
-				</thead>
-				<tbody>
-					<c:forEach var="burger" items="${burgers}">
-						<tr>
-							<td><c:out value="${burger.burgerName}"/></td>
-							<td><c:out value="${burger.restaurantName}"/></td>
-							<td><c:out value="${burger.rating}"/></td>
-							<td><a href="/burgers/edit/${burger.id}">edit</a></td>
-						</tr>	
-					</c:forEach>
-				</tbody>
-			</table>
-		</div>
+		<h1>Edit Burger</h1>
+		
 		<div class="adding-section">
-			<h2>Add a Burger :</h2>
-			<form:form class="form" action="" method="post" modelAttribute="burger">
+			<form:form class="form" action="" method="put" modelAttribute="burger">
 				<div class="burger-name">
 					<div class="frontSection">
 						<form:label path="burgerName">Burger Name</form:label>
@@ -78,7 +55,7 @@
 				<input class="submit" type="submit" value="Submit"/>
 			</form:form>
 		</div>
+		
 	</div>
-
 </body>
 </html>
