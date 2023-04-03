@@ -46,23 +46,31 @@
 			<h2>Add a Burger :</h2>
 			<form:form class="form" action="" method="post" modelAttribute="burger">
 				<div class="burger-name">
-					<form:label path="burgerName">Burger Name</form:label>
-					<form:errors path="burgerName" class="text-danger"></form:errors>
+					<div class="frontSection">
+						<form:label path="burgerName">Burger Name</form:label>
+						<form:errors path="burgerName" class="text-danger"></form:errors>
+					</div>
 					<form:input path="burgerName"></form:input>
 				</div>
 				<div class="restaurant-name">
-					<form:label path="restaurantName">Restaurant Name</form:label>
-					<form:errors path="restaurantName" class="text-danger"></form:errors>
+					<div class="frontSection">
+						<form:label path="restaurantName">Restaurant Name</form:label>
+						<form:errors path="restaurantName" class="text-danger"></form:errors>
+					</div>
 					<form:input path="restaurantName"></form:input>
 				</div>
 				<div class="input-rating">
-					<form:label path="rating">Rating</form:label>
-					<form:errors path="rating" class="text-danger"></form:errors>
+					<div class="frontSection">
+						<form:label path="rating">Rating</form:label>
+						<form:errors path="rating" class="text-danger"></form:errors>
+					</div>
 					<form:input type="number" path="rating"></form:input>
 				</div>
 				<div class="input-notes">
-					<form:label path="notes">Notes</form:label>
-					<form:errors path="notes" class="text-danger"></form:errors>
+					<div class="frontSection">
+						<form:label path="notes">Notes</form:label>
+						<form:errors path="notes" class="text-danger"></form:errors>
+					</div>
 					<form:input type="textarea" path="notes" rows="5" cols="50"></form:input>
 				</div>
 				<input class="submit" type="submit" value="Submit"/>

@@ -37,8 +37,10 @@ public class BurgerController {
 			@Valid
 			@ModelAttribute("burger") Burger burger
 			, BindingResult result
+			,Model model
 			) {
 		if(result.hasErrors()) {
+			model.addAttribute("burgers", bService.allBurger());
 			return "index.jsp";
 		}
 		bService.createBurger(burger);
